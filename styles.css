@@ -67,6 +67,7 @@ body{
 
 .custom__button:hover{
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .btn__green{
@@ -168,11 +169,18 @@ body{
 }
 
 .main__images{
+    width: 80%;
+
+    padding-bottom: 80px;
+}
+
+.main__images ul{
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 80%;
     align-items: center;
-    padding-bottom: 80px;
+    width: 100%;
+    gap: 20px;
 }
 
 .main__images img{
@@ -185,13 +193,13 @@ body{
 
 footer{
     display: flex;
+    width: 100%;
     align-items: center;
     background-color: rgb(245, 246, 248);
 }
 
 .footer__container{
     display: flex;
-    width: 80%;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -247,12 +255,11 @@ footer{
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header__container,
     .header__btns,
     .main__list,
     .items,
-    .main__images,
     .footer__container,
     .details__list {
         display: flex;
@@ -309,8 +316,11 @@ footer{
         width: 100%;
     }
 
-    .main__images {
-        gap: 50px;
+    .main__images ul{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        padding-right: 45px;
     }
 
     .main__footer {
